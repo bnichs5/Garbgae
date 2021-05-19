@@ -1,0 +1,20 @@
+---
+application:
+  name: "garbgae"
+  project: "market2"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "boxy"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/boxy"
+databases:
+- type: "MYSQL"
+  name: "freddy"
+  version: "8.0"
+routers:
+- name: "main-garbgae"
+  routes:
+  - application_name: "garbgae"
+    paths:
+    - "/*"
