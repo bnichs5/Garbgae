@@ -1,0 +1,1569 @@
+
+.wptao-row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wptao-user-profile {
+
+}
+
+.wptao-pcol-1 {
+    box-sizing: border-box;
+    width: 33.333333%;
+    float: left;
+    padding-right: 15px;
+    margin-top: 35px;
+    max-width: 420px;
+}
+
+.wptao-pcol-2 {
+    box-sizing: border-box;
+    width: 66.666666%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 35px;
+    max-width: 1000px;
+}
+
+.wptao-event-delete-effect {
+    animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+    /*transform origin is moved to the bottom left corner*/
+    transform-origin: 0% 100%;
+}
+@keyframes removed-item-animation {
+    0% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(600px) rotateZ(90deg);
+    }
+}
+
+.wptao-event-actions-panel {
+    background: #fff;
+    float: left;
+    height: 18px;
+    opacity: 1;
+    margin-top:3px;
+    padding: 4px 20px 0 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+    border-top: 1px dashed #eee;
+}
+.wptao-event-actions-panel-inner {
+    float: left;
+    margin-left:52px;
+}
+.wptao-event-actions-panel-item {
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 17px;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+.wptao-event-actions-panel-item:hover {
+    opacity: 0.8;
+}
+.wptao-event-actions-panel-item .dashicons {
+    font-size: 17px;
+    line-height: 17px;
+}
+.wptao-event-action-delete {
+    color: #E55444;
+}
+
+
+.wptao-module {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 25px 45px;
+    position: relative;
+}
+
+.wptao-module-header {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.wptao-module h2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.wptao-event-filter-dates label {
+    display: block;
+    margin-bottom: 4px;
+}
+.wptao-event-filter-dates label > span {
+    display: inline-block;
+    min-width: 80px;
+}
+.wptao-mod-user-info .dashicons{
+    font-size: 18px;
+    margin-right: 5px;
+    color: #555;
+}
+.wptao-user-name-av {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+}
+.wptao-user-name-av img {
+    border-radius: 100%;
+    display: block;
+}
+.wptao-profile-edit-link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.wptao-profile-delete-link {
+    position: absolute;
+    right: 10px;
+    top: 44px;
+}
+
+.wptao-user-name h1 {
+    display: block;
+    line-height: 21px;
+    margin-top: 5px;
+    padding: 0;
+    font-weight: lighter;
+    letter-spacing: -1px;
+    font-size: 27px;
+}
+
+.wptao-back {
+    display: block;
+    margin-top: 20px;
+}
+
+.wptao-back a{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.wptao-back span {
+    font-size: 11px;
+    height: 10px;
+    margin-right: -3px;
+    margin-top: 3px;
+}
+
+
+.wptao-event {
+    margin: 0 0 0 20px;
+    border-left: 4px solid #1699D6;
+    position: relative;
+}
+.wptao-event-item:last-child {
+    border-bottom: 4px solid #2a97d7;
+    padding-bottom: 30px;
+}
+
+
+.wptao-event p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.wptao-event-meta {
+    float: left;
+    width: 50px;
+}
+
+.wptao-event-content {
+    float: left;
+    width: calc(100% - 53px);
+    background: #fff;
+
+    border-left: 3px solid #aaa;
+}
+
+.wptao-event-content-row {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.wptao-event-date {
+    float: left;
+    padding: 0;
+    font-size: 13px;
+    color: #888;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wptao-event-title {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.wptao-event-title a {
+    text-decoration: none;
+}
+
+.wptao-event-title q{
+    color: #111;
+    quotes:"\201C""\201D""\2018""\2019";
+}
+
+.wptao-event-title q:before{
+    content: open-quote;
+    margin-right: 2px;
+}
+.wptao-event-title q:after{
+    content: close-quote;
+    margin-left: 2px;
+}
+
+.wptao-event-desc {
+    font-size: 12px;
+    margin-top: 4px;
+    line-height: 20px;
+    word-break: break-all;
+}
+
+.wptao-event-content-inner {
+    float: left;
+    width: calc(100% - 85px);
+}
+
+.wptao-events-page .wptao-event-content-inner{
+    width: calc(100% - 295px);
+}
+.wptao-event-content-user {
+    float: right;
+    max-width: 215px;
+}
+
+.wptao-event-preloader img {
+    display: block;
+    margin: 15px auto;
+    width: 40px;
+    height: 40px;
+}
+
+.wptao-event-nores {
+    border:none;
+    border-top: 2px dashed #ddd;
+    margin: 20px 0;
+    padding-top: 16px;
+    text-align: center;
+    z-index: -1;
+}
+
+.wptao-date-year {
+    padding-top: 45px;
+}
+
+.wptao-date-year:first-child {
+    padding-top: 0;
+}
+.wptao-table-mark-lg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: -27px;
+    background: #fff;
+    border-radius: 100%;
+    border:3px solid #0090D3;
+    color:#444;
+    font-size: 13px;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 0 0 6px;
+}
+
+.wptao-table-mark-md {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100%;
+    border:3px solid #0090D3;
+    color:#444;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 0 0 6px;
+    position: absolute;
+    left: -21px;
+    bottom: 11px;
+    padding: 8px 0 0 7px;
+}
+
+.wptao-date-month {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+.wptao-date-day {
+    position: relative;
+    padding: 35px 0 15px 0;
+}
+
+.wptao-table-mark-dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    border:2px solid #0090D3;
+    position: absolute;
+    left: -14px;
+    bottom:4px;
+
+}
+.wptao-table-month {
+    background: #2A97D7 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 30px 7px 50px;
+    text-transform: uppercase;
+}
+.wptao-table-day {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 30px 5px 50px;
+    text-transform: uppercase;
+}
+
+.wptao-event-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 100%;
+    border:2px solid #fff;
+    color:#fff;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -16px;
+    margin-top: 3px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+wptao-event-icon i {
+    display: block;
+}
+
+.wptao-event-icon .dashicons {
+    font-size: 16px;
+    margin-top: 4px;
+    line-height: 18px;
+    margin-right: 1px;
+
+}
+.wptao-event-icon:hover, .wptao-event-icon:focus, .wptao-event-icon:active {
+    color: #fff;
+    box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.8);
+}
+
+
+.wptao-arrow-left {
+    border-bottom: 4px solid transparent!important;
+    border-right: 5px solid #aaa;
+    border-top: 4px solid transparent!important;
+    height: 0;
+    left: 45px;
+    position: absolute;
+    top: 13px;
+    width: 0;
+}
+
+.wptao-older-events-wrapp {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.wpta-event-dashicon {
+    color: #aaa;
+}
+
+.wptao-event-icon-image {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.wptao-metabox-filter#screen-meta-links .show-settings::after {
+    color:#fff;
+}
+.wptao-metabox-filter#screen-meta-links .show-settings {
+    background: #2A97D7;
+    color: #fff;
+    box-shadow: none;
+}
+.wptao-metabox-filter#screen-meta-links .show-settings:hover, .wptao-metabox-filter#screen-meta-links .show-settings:focus {
+    color: #fff; 
+}
+.wptao-metabox-filter #screen-options-link-wrap{
+    border-top: none;
+    background: #2A97D7;
+    border-color: #1A8BBF;
+}
+
+.wptao-filter-wrap {
+    padding: 10px 20px;
+    position: relative;
+}
+.wptao-filter-wrap form {
+    position: relative;
+}
+.wptao-filter-bg-ico {
+    color: #f4f4f4;
+    font-size: 622px;
+    position: absolute;
+    right: 41%;
+    top: -36%;
+}
+.wptao-filter-bg-ico-ep.wptao-filter-bg-ico {
+    font-size: 455px;
+    left: 36px;
+    top: -136px;
+}
+.wptao-filter-bg-ico-wrapp {
+    height: 400px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.wptao-filter-wrap h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;  
+    font-weight: lighter;
+    font-style: italic;
+}
+.wptao-filter-wrap h4 {
+    font-size: 14px;
+    font-style: italic;
+    margin: 15px 0 5px 0;
+    text-transform: uppercase;
+}
+
+.wptao-module-content .metabox-prefs{
+    margin-bottom: 10px;
+}
+
+.wptao-event-filter-ident {
+    margin-top: 10px;
+}
+
+.wptao-filter-wrap label {
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+.wptao-filter-wrap.wptao-filter-events-page {
+    padding: 0;
+}
+.wptao-filter-wrap.wptao-filter-events-page label {
+    min-width: 120px;
+}
+
+.wptao-profile-sort-submit {
+    margin: 20px 0;
+}
+
+.wptao-date-input {
+    width: 100px;
+    margin: 0 10px 0 5px;
+}
+
+#wptao-user-profile-edit .form-table textarea {
+    width: 500px;
+    margin-bottom: 6px;
+}
+
+.wptao-report-filter {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: visible;
+}
+.wptao-report-filter .button {
+    margin-left: 10px;
+}
+.wptao-report-filter label{
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.wptao-report-filter-field {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: middle;
+}
+.wptao-report-filter-field:first-child{
+    margin-left: 0;
+}
+
+.wptao-report-content th {
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.wptao-users-list-wrap th {
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.wptao-users-list-wrap .avatar {
+    border-radius: 100%;
+    border: 1px solid #eee;
+    padding: 3px;
+}
+.wptao-column-no {
+    width: 30px;
+}
+
+
+.widefat td.wptao-cell-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    vertical-align: middle;
+}
+.wptao-report-sidebar1 {
+    float: left;
+    width: 66.6666666%
+}
+.wptao-report-sidebar2 {
+    float: right;
+    width: 33.33333333% 
+}
+
+.wptao-dbox {
+    display: block;
+    background: #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+
+.wptao-dbox-sm {
+    width: 150px;
+    height: 150px;
+}
+.wptao-dbox-md {
+    width: 305px;
+    height: 150px;
+}
+.wptao-dbox-md-col {
+    width: 150px;
+    height: 305px;
+}
+.wptao-dbox-lg {
+    width: 305px;
+    height: 305px;
+}
+
+.wptao-dbox-icon {
+    position: absolute;
+    left: -20%;
+    top:  -20%;
+    font-size: 200px;
+    opacity: 0.1;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+
+
+.wptao-dbox-md .wptao-dbox-icon{
+    font-size: 200px;
+}
+.wptao-dbox-md-col .wptao-dbox-icon {
+    font-size: 200px;
+}
+.wptao-dbox-lg .wptao-dbox-icon {
+    font-size: 300px;
+}
+
+
+.wptao-dbox-title {
+    color: #fff;
+}
+
+.wptao-dbox-traffic .wptao-dbox-inner {
+    background-color: #2A97D7;
+}
+.wptao-dbox-traffic .wpta-hints-num {
+    color: #2A97D7;
+}
+
+.wptao-dbox-user {
+    background-color: #28ACA3;
+}
+.wptao-dbox-user .wpta-hints-num {
+    color: #28ACA3;
+}
+.wptao-dbox-commerce {
+    background-color: #F36959;
+}
+.wptao-dbox-commerce .wpta-hints-num{
+    color: #F36959;
+}
+.wptao-dbox-contact {
+    background-color: #A24A92;
+}
+.wptao-dbox-contact .wpta-hints-num{
+    color: #A24A92;
+}
+
+
+.wptao-dbox-inner {
+    position: relative;
+    height: 100%;
+}
+
+
+.wptao-dbox-align-inner {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+.wptao-dbox-title {
+    padding: 0 15px;
+    text-align: center;
+    margin: 0;
+    color: rgba(255,255,255,0.9);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.wptao-dbox-value {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wptao-dbox-value a, .wptao-dbox-value a:hover, .wptao-dbox-value a:focus,  .wptao-dbox-value a:visited,  .wptao-dbox-value a:active {
+    color: #fff;
+}
+
+.wptao-dbox-number {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.wptao-dbox-report,
+.wptao-dbox-num-hints,
+.wptao-dbox-handler,
+.wptao-dbox-close{
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.wptao-dbox-report:hover,
+.wptao-dbox-report:focus,
+.wptao-dbox-num-hints:hover,
+.wptao-dbox-num-hints:focus {
+    color: #fff;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+.wptao-dbox-report .dashicons {
+    line-height: 25px;
+    font-size: 25px;
+}
+.wptao-dbox-num-hints .dashicons  {
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.wptao-dbox-num-hints {
+    right: auto;
+    left: 3px;
+    padding: 0;
+    bottom: 10px;
+}
+
+.wpta-hints-num {
+    color: #999;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    width: 19px;
+    z-index: 10;
+}
+
+.wptao-dbox-handler {
+    right: auto;
+    left: 4px;
+    padding: 0;
+    top: 5px;
+    opacity: 0;
+    cursor: move;
+    font-size: 19px;
+}
+.wptao-dbox:hover .wptao-dbox-handler,
+.wptao-dbox:hover .wptao-dbox-close{
+    opacity: 0.7;
+    -webkit-transition: all 200ms 200ms ease-in-out;
+    -moz-transition: all 200ms 200ms ease-in-out;
+    -ms-transition: all 200ms 200ms ease-in-out;
+    -o-transition: all 200ms 200ms ease-in-out;
+    transition: all 200ms 200ms ease-in-out;
+}
+
+
+.wptao-dashboard-boxes .ui-draggable-dragging {
+    z-index: 9999;
+    box-shadow: 0 0 9px 4px rgba(0,0,0,0.1);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.wptao-dashboard-boxes .packery-drop-placeholder {
+    outline: 3px dashed #bbb;
+    outline-offset: -6px;
+    z-index: -1;
+    /* transition position changing */
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.wptao-dbox-close {
+    right: auto;
+    right: 4px;
+    padding: 0;
+    top: 2px;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+
+.wptao-dashboard-head, .wptao-report-header {
+    margin: 20px 0 20px 4px;
+}
+.wptao-users-list-wrap .wptao-dashboard-head {
+    margin-bottom: 0;
+}
+
+.wptao-dashboard-head h2, .wptao-report-header h2 {
+    font-weight: lighter; 
+    font-size: 23px;
+    line-height: 23px;
+}
+.wptao-dashboard-head h2 .dashicons, .wptao-report-header h2 .dashicons{
+    color: #555;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 24px;
+    width: 37px;
+}
+.wptao-events-page-head.wptao-dashboard-head {
+    margin-bottom: 5px;
+}
+
+.wptao-report-chart {
+    height: 300px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.wptao-report-summary{
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    background: #fff;
+    padding: 10px 0;
+}
+.wptao-report-summary-col6{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.wptao-report-summary-col4{
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+}
+
+.wptao-report-summary-value{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.wptao-report-summary-item h4{
+    font-weight: lighter;
+    margin: 0 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#wptao-dbox-commerce_sale .wptao-dbox-icon {
+    left: -10px;
+    top: -7px;
+    font-size: 161px;
+}
+
+.wptao-actions-user-wrap, .wptao-update-user-wrap {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.wptao-update-user-wrap form, .wptao-actions-user-wrap form {
+    position: relative;
+}
+.wptao-dashicon-edit-user {
+    color: #eee;
+    font-size: 790px;
+    position: absolute;
+    right: 50%;
+    top: -27%;
+}
+
+.wptao-dbox-list {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.wptao-dbox-list li {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wptao-dbox-list li a {
+    text-decoration: none;
+}
+
+.wptao-report-chart-bar {
+    padding: 8px;
+    background: #fff;
+}
+
+.wptao-dbox-slogin:first-child {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.wptao-dbox-slogin h5{
+    margin: 0;
+    font-size: 22px;
+}
+.wptao-dbox-slogin span{
+    padding: 5px 0 15px 0;
+    font-size: 32px;
+    line-height: 100%;
+    display: block;
+}
+
+.wptao-success-color {
+    color: #3c763d;
+}
+.wptao-error-color {
+    color: #a94442;
+}
+
+.button.wptao-btn-sort .dashicons {
+    font-size: 19px;
+    margin-right: 11px;
+    margin-top: 4px;
+}
+.wptao_settings-group > h3, .wptao_settings-group > h2{
+    display: none;
+}
+.form-table td p.wptao_settings-description-field {
+    font-size: 12px;
+    color: #888;
+    margin: 0 0 0 4px;
+}    
+
+.wptao-events-summary-item {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #eee;
+    display: block;
+    transition: all 200ms ease-in-out;
+}
+.wptao-events-summary-item:focus,
+.wptao-events-summary-item:active {
+    box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.8);
+    color: #fff;
+}
+.wptao-events-summary-item:hover {
+    padding-left: 10px;
+}
+
+
+.wptao-events-summary-item .wptao-event-icon {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.wptao-events-summary-title {
+    float: left;
+    font-size: 15px;
+    margin: 5px 10px 0;
+    font-weight: lighter;
+    color: #777;
+}
+
+.wptao-events-summary-time {
+    display: block;
+    font-style: italic;
+    margin-bottom: 13px;
+    margin-top: -5px;
+    color: #777;
+}
+.wptao-events-summary-active {
+    padding-left: 10px;
+}
+.wptao-events-summary-active .wptao-events-summary-title {
+    font-weight: 900;
+}
+.wptao-event-content-profile {
+    margin-right: 15px;
+    display: block;
+}
+
+.wptao-event-content-profile .wptao-user-name-dis {
+    float: right;
+    font-size: 12px;
+    margin: 4px 7px 0 0;
+    text-align: right;
+    width: 165px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wptao-event-content-profile span.wptao-user-name-dis{
+    color: #777;
+}
+
+.wptao-event-content-profile .wptao-user-name-av {
+    float: right;
+    padding: 2px;
+}
+
+.wptao-report-mvp-raw-url {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+}
+.wptao-table-column-big {
+    width: 60%;
+}
+
+.wptao-toggle-module {
+    display: none;
+}
+
+.wptao-notice-marketing {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.wptao-notice-marketing:after {
+    content: "\f466";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    font-family: dashicons;
+    -moz-transform: scale(1) rotate(6deg);
+    -webkit-transform: scale(1) rotate(6deg);
+    -o-transform: scale(1) rotate(6deg);
+    -ms-transform: scale(1) rotate(6deg);
+    transform: scale(1) rotate(6deg);
+    font-size: 270px;
+    color: #C8E4B5;
+}
+
+.wptao-ico-before:before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background-image: url('../images/wptao-ico-24.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wptao-hints-wrapp {
+    margin: 50px 0 20px 0;
+}
+.wptao-hints-wrapp * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.wptao-hints-wrapp h2 {
+    margin-bottom: 10px;
+}
+
+.wptao-hint-box {
+    border-left:4px solid #bbb;
+    background: #fff;
+    margin-left: 5px;
+}
+.wptao-hint-ico {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: #bbb;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.wptao-hint-ico:before {
+    margin-top: 8px;
+    text-align: center;
+    display: block;
+    padding-right: 3px;
+}
+.wptao-hints-lead {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.wptao-hints-lead p{
+    margin-top: 5px
+}
+
+.wptao-hint-title {
+    float: left;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 6px 0 0;
+    min-height: 29px;
+    padding-left: 12px;
+    width: calc(100% - 35px);
+    border-bottom: 1px solid #eee;
+}
+
+.wptao-hint-content {
+    padding: 10px;
+}
+
+
+.wptao-meta-query-arg-label, .wptao-meta-traffic-source-label, .wptao-label, .wptao-user-traffic-source-label {
+    display: inline-block;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wptao-meta-query-arg-label, .wptao-meta-traffic-source-label, .wptao-label {
+    max-width: 350px;
+}
+
+.wptao-user-traffic-source-label {
+    max-width: 170px;
+}
+
+.wptao-meta-direct {
+    background-color: #eab364;
+}
+
+.wptao-meta-referer {
+    background-color: #acbd78;
+}
+
+.wptao-user-tag {
+    background-color: #a4cabc;
+}
+
+.wptao-meta-title {
+    color: #3c763d;
+    font-weight: bold;
+}
+
+.wptao-users-list-wrap .column-user_avatar {
+    width: 40px;
+}
+
+
+.wptao-email-status {
+    font-weight: bold;
+}
+
+.wptao-email-status-valid {
+    color: green;
+}
+
+.wptao-email-status-invalid {
+    color: red;
+}
+
+.wptao-email-status-disposable {
+    color: orange;
+}
+
+.wptao-datepicker {
+    position: relative;
+}
+.wptao-report-items-limit {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    position: relative;
+
+}
+.wptao-filter-expanded {
+    position: absolute;
+    left: 0;
+    top: 99%;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.1);
+    min-width: 575px;
+    z-index: 5;
+    display: none;
+}
+.wptao-report-items-limit .wptao-filter-expanded{
+    min-width: 250px;
+}
+
+.wptao-report-filter-button {
+    padding: 5px 25px 5px 35px;
+    display: inline-block;
+    position: relative;
+    background-color: #f5f5f5;
+    color: #444;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.03);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.wptao-report-filter-button:hover, .wptao-report-fb-active{
+    background-color: #eee;
+}
+
+.wptao-report-filter-button:before {
+    height: 100%;
+    left: 5px;
+    opacity: 0.55;
+    position: absolute;
+    width: 20px;
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top; 
+}
+
+.wptao-date-button:before{
+    content: "\f145";
+}
+.wptao-ril-button:before{
+    content: "\f203";
+}
+
+.wptao-report-filter-button:after{
+    content: "\f140";
+    height: 100%;
+    right: 13px;
+    top:4px;
+    opacity: 0.55;
+    position: absolute;
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+    width: 10px;
+}
+
+.wptao-date-range-wrapp {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.wptao-date-range {
+    margin-top: 10px;
+}
+
+.wptao-date-exp-btns {
+    margin-top: 25px;
+    text-align: right;
+    display: none;
+}
+
+.wptao-date-qd-wrapp {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    border-right:1px solid #eee;
+}
+.wptao-date-qd td:last-child{
+    padding-left: 10px;
+}
+
+.wptao-date-qd a {
+    text-decoration: none;
+}
+
+.wptao-date-range-box {
+    width: 120px;
+    position: relative;
+    display: inline-block;
+    background-image: url('../images/calendar.png');
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    margin: 0;
+}
+.wptao-date-range >span {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.wptao-date-qd > table {
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: 6px;
+}
+
+.wptao-date-exp-label {
+    text-transform: uppercase;
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wptao-report-items-limit input {
+    display: inline-block;
+    margin-top: 4px;
+    vertical-align: top;
+}
+
+.wptao-ril-inputs-wrapp {
+    margin-top: 7px;
+}
+
+.wptao-more-user-fp, .wptao-less-user-fp {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    color: #0073aa;
+}
+.wptao-mod-user-fingerprint-older {
+    display: none;
+}
+.wptao-less-user-fp {
+    display: none;
+}
+
+.wptao-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wptao-question-mark {
+    display: inline-block;
+    vertical-align: middle;
+    color: #71B7E0;
+    cursor: help;
+}
+.wptao-tooltip {
+    background: #fff;
+    border: 1px solid #ddd!important;
+    padding: 10px 20px;
+    max-width: 280px;
+}
+.wptao-tooltip-content {
+    display: none;
+}
+
+.wptao-promobox {
+     background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+.wptao-promobox-inner {
+    position: relative;
+    z-index: 10;
+}
+.wptao-promobox-ico {
+    color: #f4f4f4;
+    font-size: 300px;
+    position: absolute;
+    right: 38%;
+    top: -36%;
+}
+.wptao-promobox-inner h3 {
+  margin-top: 0;
+font-size: 20px;  
+padding-top: 30px;
+}
+
+.wptao-promobox-dismiss {
+    color:#777;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    border:1px solid #ccc;
+    padding:1px 4px;
+    float: right;
+}
+
+
+/*=============================================================================================
+   RWD
+=============================================================================================*/
+
+@media (max-width: 1200px) {
+    .wptao-pcol-1 {
+        max-width: none;
+        width: 100%;
+    }
+    .wptao-pcol-2 {
+        max-width: none;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 5px;
+    }
+    .wptao-module-content {
+        display: none;
+    }
+
+    .wptao-toggle-module:before {
+        content: "\f140";
+    }
+
+    .wptao-module-open .wptao-toggle-module:before {
+        content: "\f142";
+    }
+
+    .wptao-toggle-module {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 50px;
+        z-index: 2;
+    }
+
+}
+
+
+@media (max-width: 782px) {
+
+    .wptao-event-date {
+        float: none;
+        display: block;
+    }
+
+    .wptao-event-content-inner {
+        float: none;
+        padding: 0 5px 0 18px;
+        width: auto;
+    }
+    .wptao-event-content-user {
+        float: none;
+        padding-left: 18px;
+        max-width: none;
+        margin-top: 3px;
+    }
+    .wptao-event-content-user a {
+        text-align: left;
+    }
+    .wptao-event-content-profile .wptao-user-name-av {
+        float: left;
+    }
+    .wptao-event-content-profile .wptao-user-name-dis {
+        float: left;
+        text-align:left;
+        margin: 4px 0 0 5px;
+    }
+    .wptao-event-content-inner, .wptao-events-page .wptao-event-content-inner {
+        width:auto;
+    }
+    #wptao-user-profile-edit .form-table textarea {
+        width: 100%;
+    }
+    .wptao-report .wp-list-table tr:not(.inline-edit-row):not(.no-items) td.wptao-report-column-primary ~ td:not(.check-column) {
+        padding: 3px 8px 3px 35%;
+        font-size: 14px;
+    }
+
+    .wptao-report .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.wptao-report-column-primary)::before{
+        content: attr(data-colname);
+        display: block;
+        left: 10px;
+        overflow: hidden;
+        position: absolute;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 32%;
+    }   
+
+    .wptao-report-filter-field {
+        display: block;
+        margin-bottom: 6px;
+        float: none;
+    }
+    .wptao-report-filter-field input {
+        min-width: 230px;
+        display: block;
+        margin: 0;
+    }
+
+    .wptao-report-filter .button {
+        margin: 0; 
+    }
+
+    .wptao-event-actions-panel { 
+        display: block;
+    }
+    .wptao-filter-expanded {
+        position: relative;
+        min-width: 0;
+    }
+
+}
